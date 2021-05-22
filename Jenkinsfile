@@ -4,7 +4,7 @@ pipeline {
 
     registry = "devanshuaggrawal/project_dockerimage_python_pipeline"
 
-    registryCredential = 'docker-creds'
+    registryCredential = 'dockerhub_id'
 
     dockerImage = ''
 
