@@ -84,22 +84,13 @@ pipeline {
 
         script {
 
-		        sh "docker run -d -p 8000:8000 ${dockerImage.imageName()"
+		sh "docker run -d -p 8000:8000 ${dockerImage.imageName()}"
         }
 
       }
 	  
-      }
-		
-	stage('Remove dangling docker images') {
       
-	steps{
-        
-	script {
-                sh "docker system prune --force --all"
-        }
-      }
-    }
+		
 
 	}
 
